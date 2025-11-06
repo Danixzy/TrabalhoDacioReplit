@@ -8,8 +8,10 @@ def main():
   print("Starting Service...\n")
 
   
-  servidor = HTTPServer(("localhost", 8000), vw.DespesaController)
-  print("Servidor rodando em http://localhost:8000")
+  servidor = HTTPServer(("localhost", 8000), vw.BibliotecaView)
+  print("Servidor SGBU rodando em http://localhost:8000")
+  print("Acesse: http://localhost:8000/livros")
+  print("Equipe 2 - CRUD de Livros")
   servidor.serve_forever()
 
 if __name__ == "__main__":

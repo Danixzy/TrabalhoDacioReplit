@@ -128,7 +128,7 @@
             <strong>⚠️ Atenção:</strong> Você está editando as informações de um livro existente. Verifique todos os dados antes de salvar.
         </div>
         
-        <form action="/editar_livro" method="POST">
+        <form action="/livros/editar" method="POST">
             <input type="hidden" name="indice" value="<!--INDICE-->">
             
             <div class="form-group">
@@ -157,7 +157,7 @@
             
             <div class="button-group">
                 <button type="submit" class="btn-primary">💾 Salvar Alterações</button>
-                <button type="button" class="btn-secondary" onclick="window.location.href='/listar_livros'">❌ Cancelar</button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='/livros'">❌ Cancelar</button>
             </div>
         </form>
     </div>
